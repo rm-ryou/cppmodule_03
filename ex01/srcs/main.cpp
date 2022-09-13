@@ -2,6 +2,7 @@
 
 void	test(ScavTrap& claptrap)
 {
+	claptrap.guardGate();
 	claptrap.attack("enemy");
 	claptrap.takeDamage(50);
 	claptrap.beRepaired(50);
