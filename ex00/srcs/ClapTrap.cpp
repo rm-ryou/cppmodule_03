@@ -25,11 +25,51 @@ ClapTrap::ClapTrap(const ClapTrap& claptrap)
 ClapTrap&	ClapTrap::operator=(const ClapTrap& other)
 {
 	std::cout << "Copy assignment operator called." << std::endl;
-	this->name_ = other.name_;
-	this->hitPoint_ = other.hitPoint_;
-	this->enegyPoint_ = other.enegyPoint_;
-	this->attackDamage_ = other.attackDamage_;
+	this->setName(other.name_);
+	this->setHitPoints(other.hitPoint_);
+	this->setEnergyPoints(other.enegyPoint_);
+	this->setAttackDamage(other.attackDamage_);
 	return *this;
+}
+
+std::string	ClapTrap::getName() const
+{
+	return this->name_;
+}
+
+int	ClapTrap::getHitPoints() const
+{
+	return this->hitPoint_;
+}
+
+int	ClapTrap::getEnergyPoints() const
+{
+	return this->enegyPoint_;
+}
+
+int	ClapTrap::getAttackDamage() const
+{
+	return this->attackDamage_;
+}
+
+void	ClapTrap::setName(const std::string& name)
+{
+	this->name_ = name;
+}
+
+void	ClapTrap::setHitPoints(const int hitPoints)
+{
+	this->hitPoint_ = hitPoints;
+}
+
+void	ClapTrap::setEnergyPoints(const int energyPoints)
+{
+	this->enegyPoint_ = energyPoints;
+}
+
+void	ClapTrap::setAttackDamage(const int attackDamage)
+{
+	this->attackDamage_ = attackDamage;
 }
 
 
