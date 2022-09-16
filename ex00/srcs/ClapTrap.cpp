@@ -5,7 +5,7 @@ ClapTrap::ClapTrap() : name_("hoge"), hitPoint_(10), enegyPoint_(10), attackDama
 	std::cout << "Default constructor called." << std::endl;
 }
 
-ClapTrap::ClapTrap(const std::string& name) : name_(name), hitPoint_(10), enegyPoint_(10), attackDamage_(10)
+ClapTrap::ClapTrap(const std::string& name) : name_(name), hitPoint_(10), enegyPoint_(10), attackDamage_(0)
 {
 	std::cout << "String constructor called." << std::endl;
 	this->showStatus();
