@@ -2,29 +2,29 @@
 
 ClapTrap::ClapTrap() : name_("hoge"), hitPoint_(10), enegyPoint_(10), attackDamage_(0)
 {
-	std::cout << "Default constructor called." << std::endl;
+	std::cout << "ClapTrap Default constructor called." << std::endl;
 }
 
 ClapTrap::ClapTrap(const std::string& name) : name_(name), hitPoint_(10), enegyPoint_(10), attackDamage_(0)
 {
-	std::cout << "String constructor called." << std::endl;
+	std::cout << "ClapTrap String constructor called." << std::endl;
 	this->showStatus();
 }
 
 ClapTrap::~ClapTrap()
 {
-	std::cout << "Destructor called." << std::endl;
+	std::cout << "ClapTrap Destructor called." << std::endl;
 }
 
 ClapTrap::ClapTrap(const ClapTrap& claptrap)
 {
-	std::cout << "Copy constructor called." << std::endl;
+	std::cout << "ClapTrap Copy constructor called." << std::endl;
 	*this = claptrap;
 }
 
 ClapTrap&	ClapTrap::operator=(const ClapTrap& other)
 {
-	std::cout << "Copy assignment operator called." << std::endl;
+	std::cout << "ClapTrap Copy assignment operator called." << std::endl;
 	this->setName(other.name_);
 	this->setHitPoints(other.hitPoint_);
 	this->setEnergyPoints(other.enegyPoint_);
